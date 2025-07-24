@@ -114,3 +114,63 @@ h1, h2, h3 {
 #client-portal a:hover {
   color: #00C0E3;
 }
+
+/* Navbar */
+header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0A192F;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0057B8;
+}
+
+/* Footer */
+footer {
+  background-color: #F7F9FC;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #E0E0E0;
+  font-size: 14px;
+  color: #5C6B82;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  margin-top: 16px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0057B8;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #00C0E3;
+}
