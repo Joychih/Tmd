@@ -2,37 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Homepage - TMD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMD Homepage</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="tmd-icon.png" type="image/png" />
 </head>
-
 <body>
-
   <!-- Navbar -->
   <header>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#login">Login</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Logo Section -->
-  <section class="logo-section">
-    <img src="tmd-icon.png" alt="TMD Logo Icon" />
-    <img src="tmd-logo.png" alt="TMD Full Logo" />
-  </section>
-
   <!-- Hero Section -->
   <section id="hero">
+    <img src="tmd-logo.png" alt="TMD Logo" style="height: 80px;" />
     <h1>ITSM & Asset Management for Aussie MSPs</h1>
-    <p>Simplify your IT operations with our all-in-one, locally hosted platform.<br>
-       Built by engineers. Priced for humans.</p>
+    <p>Simplify your IT operations with our all-in-one, locally hosted platform.<br>Built by engineers. Priced for humans.</p>
     <button>Start Free Trial</button>
     <button>View Pricing</button>
   </section>
@@ -56,8 +49,8 @@
     </div>
   </section>
 
-  <!-- Ticketing Layout -->
-  <section class="ticketing-section">
+  <!-- Ticketing Layout Section -->
+  <section id="ticketing">
     <h2>Submit a Ticket</h2>
     <p>This is a placeholder for the ticket submission form.</p>
     <button>Submit a Ticket</button>
@@ -70,24 +63,22 @@
     <button>Book a Demo</button>
   </section>
 
-  <!-- Client Portal -->
+  <!-- Client Portal CTA -->
   <section id="client-portal">
-    <p>Already using TMD?<br>
-      <a href="#">Log in to Client Portal →</a>
-    </p>
+    <p>Already using TMD?<br />
+    <a href="#">Log in to Client Portal →</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2025 The Managed Desk. Built in Australia. Hosted on AWS Sydney.</p>
     <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Terms & Privacy</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#terms">Terms & Privacy</a></li>
     </ul>
   </footer>
-
 </body>
 </html>
