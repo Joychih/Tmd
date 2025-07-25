@@ -3,34 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TMD Homepage</title>
+  <title>Homepage - TMD</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="tmd-icon.png" type="image/png" />
 </head>
+
 <body>
-  <!-- Navbar -->
+  <!-- navbar -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#login">Login</a></li>
-      </ul>
-    </nav>
-  </header>
+<nav class="navbar">
+  <a href="index.html" class="logo">
+    <img src="TMD-Thumbnail.jpg" alt="TMD Logo" />
+  </a>
+
+  <div class="nav-center">
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="features.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+</header>
+  
 
   <!-- Hero Section -->
   <section id="hero">
-    <img src="tmd-logo.png" alt="TMD Logo" style="height: 80px;" />
     <h1>ITSM & Asset Management for Aussie MSPs</h1>
-    <p>Simplify your IT operations with our all-in-one, locally hosted platform.<br>Built by engineers. Priced for humans.</p>
+    <p>Simplify your IT operations with our all-in-one, locally hosted platform. Built by engineers. Priced for humans.</p>
     <button>Start Free Trial</button>
     <button>View Pricing</button>
   </section>
 
-  <!-- Why TMD -->
+  <!-- Why TMD Section -->
   <section id="why-tmd">
     <h2>Why TMD</h2>
     <div class="features">
@@ -49,18 +56,23 @@
     </div>
   </section>
 
-  <!-- Ticketing Layout Section -->
-  <section id="ticketing">
-    <h2>Submit a Ticket</h2>
-    <p>This is a placeholder for the ticket submission form.</p>
-    <button>Submit a Ticket</button>
-  </section>
-
-  <!-- Demo CTA -->
+  <!-- Demo CTA Section -->
   <section id="demo-cta">
     <h2>Need to see it in action?</h2>
     <p>Book a quick walkthrough and see how TMD fits your workflow.</p>
     <button>Book a Demo</button>
+  </section>
+
+  <!-- Ticketing Layout Section -->
+  <section id="ticketing" class="ticket-section">
+    <h2>Submit a Ticket</h2>
+    <p>Need help? Submit your request below and our support team will get back to you ASAP.</p>
+    <form class="ticket-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Describe your issue..." rows="4" required></textarea>
+      <button type="submit" class="primary-btn">Submit Ticket</button>
+    </form>
   </section>
 
   <!-- Client Portal CTA -->
@@ -70,15 +82,16 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 The Managed Desk. Built in Australia. Hosted on AWS Sydney.</p>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#terms">Terms & Privacy</a></li>
-    </ul>
-  </footer>
+   <footer>
+  <p>© 2025 The Managed Desk. Built in Australia. Hosted on AWS Sydney.</p>
+  <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="features.html">Features</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="terms.html">Terms & Privacy</a></li>
+  </ul>
+</footer> 
+
 </body>
 </html>
