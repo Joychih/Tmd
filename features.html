@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features - TMD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="homepage.html" class="logo">TMD</a>
+      <ul class="nav-center">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#" class="btn btn-primary">Start Free Trial</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Intro -->
+  <section class="section intro">
+    <p>The Managed Desk gives your MSP the tools to operate faster, smarter, and more transparently — without the complexity of enterprise software.</p>
+  </section>
+
+  <!-- Feature Categories -->
+  <section class="section feature-categories">
+    <h2>Core Feature Categories</h2>
+    <div class="category">
+      <h3>🔧 Ticketing System</h3>
+      <ul>
+        <li>Email-to-ticket and self-service portal</li>
+        <li>SLA tracking and escalation rules</li>
+        <li>Assignments, priorities, and auto-routing</li>
+        <li>Comments, attachments, and internal notes</li>
+      </ul>
+    </div>
+    <div class="category">
+      <h3>💻 IT Asset Management</h3>
+      <ul>
+        <li>Hardware, software, and license tracking</li>
+        <li>Asset lifecycle and audit logs</li>
+        <li>Barcode/QR support</li>
+        <li>Import/export CSV or API</li>
+      </ul>
+    </div>
+    <div class="category">
+      <h3>🔗 Integrations</h3>
+      <ul>
+        <li>Microsoft 365 (users and groups)</li>
+        <li>Azure Active Directory</li>
+        <li>JAMF (Apple device management)</li>
+        <li>Slack (ticket alerts)</li>
+      </ul>
+    </div>
+    <div class="category">
+      <h3>📊 Dashboards & Reports</h3>
+      <ul>
+        <li>SLA compliance reports</li>
+        <li>Team and agent performance</li>
+        <li>Asset depreciation</li>
+        <li>Exportable PDFs and CSVs</li>
+      </ul>
+    </div>
+    <div class="category">
+      <h3>🧠 Smart Automation <em>(Coming Soon)</em></h3>
+      <ul>
+        <li>Conditional triggers</li>
+        <li>Workflow automation</li>
+        <li>Scheduled maintenance rules</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section final-cta">
+    <h2>Ready to replace the bloatware?</h2>
+    <div class="cta-buttons">
+      <a href="pricing.html" class="btn btn-secondary">View Pricing</a>
+      <a href="#" class="btn btn-primary">Start Free Trial</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-nav">
+      <a href="homepage.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>Proudly Built & Hosted in Australia 🇦🇺</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.querySelector(".navbar");
+      const toggle = document.querySelector(".nav-toggle");
+      toggle.addEventListener("click", () => nav.classList.toggle("open"));
+    });
+  </script>
+</body>
+</html>
