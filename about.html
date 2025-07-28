@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - TMD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="homepage.html" class="logo">TMD</a>
+      <ul class="nav-center">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#" class="btn btn-primary">Start Free Trial</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="section about-intro">
+    <h1>About Us</h1>
+    <p>The Managed Desk is an Australian-built, engineer-led ITSM and ITAM platform designed specifically for local MSPs.</p>
+    <p>Our founder, Ashwin Raphaël Singh, built TMD after years working in support roles and seeing firsthand how bloated platforms made simple IT work harder than it needed to be.</p>
+    <p>Today, TMD helps teams manage tickets, track assets, and deliver service — fast, affordable, and fully hosted on AWS Sydney.</p>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section values">
+    <h2>🌟 Our Values</h2>
+    <ul class="values-list">
+      <li>🇦🇺 Built for MSPs in Australia</li>
+      <li>🔒 Privacy-first. No data offshoring</li>
+      <li>☁️ Hosted on AWS Sydney</li>
+      <li>🤝 Supported by real engineers</li>
+      <li>🔄 No lock-ins. No gotchas. No upsells.</li>
+    </ul>
+  </section>
+
+  <!-- CTA -->
+  <section class="section final-cta">
+    <h2>Tired of bloated ITSM platforms?</h2>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-primary">Start Free Trial</a>
+      <a href="#" class="btn btn-secondary">Book a Demo</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-nav">
+      <a href="homepage.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>Proudly Built & Hosted in Australia 🇦🇺</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.querySelector(".navbar");
+      const toggle = document.querySelector(".nav-toggle");
+      toggle.addEventListener("click", () => nav.classList.toggle("open"));
+    });
+  </script>
+</body>
+</html>
