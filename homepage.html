@@ -6,92 +6,160 @@
   <title>Homepage - TMD</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- navbar -->
+  <!-- Navbar -->
   <header>
-<nav class="navbar">
-  <a href="index.html" class="logo">
-    <img src="TMD-Thumbnail.jpg" alt="TMD Logo" />
-  </a>
-
-  <div class="nav-center">
-    <ul>
-      <li><a href="homepage.html">Home</a></li>
-      <li><a href="features.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="#">Login</a></li>
-    </ul>
-  </div>
-</nav>
-
-</header>
-  
+    <nav class="navbar">
+      <a href="homepage.html" class="logo">TMD</a>
+      <ul class="nav-center">
+        <li><a href="homepage.html" class="active">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#" class="btn btn-primary">Start Free Trial</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
-  <section id="hero">
-    <h1>ITSM & Asset Management for Aussie MSPs</h1>
-    <p>Simplify your IT operations with our all-in-one, locally hosted platform. Built by engineers. Priced for humans.</p>
-    <button>Start Free Trial</button>
-    <button>View Pricing</button>
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1>Australia’s Most Trusted ITSM & Asset Management Platform</h1>
+      <p>Secure. Compliant. 100% Hosted in Australia.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">Start Free Trial</a>
+        <a href="#" class="btn btn-secondary">Book a Demo</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="dashboard-mockup.png" alt="Dashboard Mockup" />
+    </div>
   </section>
 
-  <!-- Why TMD Section -->
-  <section id="why-tmd">
-    <h2>Why TMD</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>🧾 Ticketing Made Simple</h3>
-        <p>Submit, track, and resolve tickets without the bloat.</p>
+  <!-- Core Features Section -->
+  <section id="features-core" class="section">
+    <h2>Core Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <img src="icon-ticket.svg" alt="Ticketing" />
+        <h3>Ticketing System</h3>
+        <p>Email-to-ticket, self-service portal, SLA tracking, priorities & routing.</p>
       </div>
-      <div class="feature">
-        <h3>💻 Full Asset Visibility</h3>
-        <p>Know what hardware and software your clients are using — and where.</p>
+      <div class="feature-card">
+        <img src="icon-asset.svg" alt="Asset Management" />
+        <h3>IT Asset Management</h3>
+        <p>Hardware/software tracking, lifecycle logs, barcode/QR support.</p>
       </div>
-      <div class="feature">
-        <h3>🇦🇺 Hosted on AWS Sydney</h3>
-        <p>Fast, secure, compliant, and fully supported in Australia.</p>
+      <div class="feature-card">
+        <img src="icon-integrations.svg" alt="Integrations" />
+        <h3>Integrations</h3>
+        <p>Microsoft 365, Azure AD, JAMF, Slack and more.</p>
+      </div>
+      <div class="feature-card">
+        <img src="icon-dashboards.svg" alt="Dashboards & Reports" />
+        <h3>Dashboards & Reports</h3>
+        <p>SLA compliance, performance metrics, exportable PDFs & CSVs.</p>
+      </div>
+      <div class="feature-card">
+        <img src="icon-automation.svg" alt="Smart Automation" />
+        <h3>Smart Automation</h3>
+        <p>Conditional triggers, workflow automation, scheduled rules (Coming Soon).</p>
+      </div>
+      <div class="feature-card">
+        <img src="icon-portal.svg" alt="Service Portal" />
+        <h3>Customizable Portal</h3>
+        <p>Branded self-service experience for your users.</p>
       </div>
     </div>
   </section>
 
-  <!-- Demo CTA Section -->
-  <section id="demo-cta">
-    <h2>Need to see it in action?</h2>
-    <p>Book a quick walkthrough and see how TMD fits your workflow.</p>
-    <button>Book a Demo</button>
+  <!-- Industries Section -->
+  <section id="industries" class="section">
+    <h2>Who Is It For?</h2>
+    <div class="industries-grid">
+      <div class="industry-card">
+        <img src="icon-schools.svg" alt="Schools" />
+        <h3>Schools</h3>
+      </div>
+      <div class="industry-card">
+        <img src="icon-government.svg" alt="Local Government" />
+        <h3>Local Government</h3>
+      </div>
+      <div class="industry-card">
+        <img src="icon-msp.svg" alt="MSPs" />
+        <h3>MSPs</h3>
+      </div>
+      <div class="industry-card">
+        <img src="icon-smb.svg" alt="SMBs" />
+        <h3>SMBs</h3>
+      </div>
+    </div>
   </section>
 
-  <!-- Ticketing Layout Section -->
-  <section id="ticketing" class="ticket-section">
-    <h2>Submit a Ticket</h2>
-    <p>Need help? Submit your request below and our support team will get back to you ASAP.</p>
-    <form class="ticket-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Describe your issue..." rows="4" required></textarea>
-      <button type="submit" class="primary-btn">Submit Ticket</button>
-    </form>
+  <!-- Compliance & Security Section -->
+  <section id="compliance" class="section">
+    <h2>Compliance & Security</h2>
+    <ul class="compliance-list">
+      <li>✅ ISO 27001</li>
+      <li>✅ NIST SP 800-53</li>
+      <li>✅ ACSC Essential Eight</li>
+      <li>✅ Australian Privacy Act</li>
+      <li>✅ Hosted on AWS AU</li>
+    </ul>
   </section>
 
-  <!-- Client Portal CTA -->
-  <section id="client-portal">
-    <p>Already using TMD?<br />
-    <a href="#">Log in to Client Portal →</a></p>
+  <!-- Testimonials / Trust Logos Section -->
+  <section id="testimonials" class="section testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials-grid">
+      <blockquote>
+        “TMD saved us hours every week and improved our compliance oversight.”
+        <cite>– IT Manager, St Mary’s College VIC</cite>
+      </blockquote>
+      <blockquote>
+        “Switched from ServiceNow and haven’t looked back!”
+        <cite>– CTO, LocalGov NSW</cite>
+      </blockquote>
+    </div>
+    <div class="trust-logos">
+      <img src="logo-localgov.svg" alt="LocalGov VIC" />
+      <img src="logo-mspau.svg" alt="MSP AU" />
+      <img src="logo-schools.svg" alt="Schools NSW" />
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section id="final-cta" class="final-cta">
+    <h2>Start your 14-day free trial today — no credit card needed.</h2>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-primary">Start Trial</a>
+      <a href="#" class="btn btn-secondary">Schedule Demo</a>
+    </div>
   </section>
 
   <!-- Footer -->
-   <footer>
-  <p>© 2025 The Managed Desk. Built in Australia. Hosted on AWS Sydney.</p>
-  <ul>
-    <li><a href="about.html">About</a></li>
-    <li><a href="features.html">Features</a></li>
-    <li><a href="pricing.html">Pricing</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="terms.html">Terms & Privacy</a></li>
-  </ul>
-</footer> 
+  <footer>
+    <div class="footer-nav">
+      <a href="homepage.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>Proudly Built & Hosted in Australia 🇦🇺</p>
+  </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.querySelector(".navbar");
+      const toggle = document.querySelector(".nav-toggle");
+      toggle.addEventListener("click", () => nav.classList.toggle("open"));
+    });
+  </script>
 </body>
 </html>
