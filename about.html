@@ -2,76 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - TMD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - TMD</title>
+  <!-- style.css -->
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet" />
 </head>
 <body>
+
   <!-- Navbar -->
-  <header>
+  <header class="light-header">
     <nav class="navbar">
-      <a href="homepage.html" class="logo">TMD</a>
-      <ul class="nav-center">
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a href="#" class="btn btn-primary">Start Free Trial</a>
+      <a href="index.html" class="logo">
+        <img src="TMD-Thumbnail.jpg" alt="TMD Logo" class="logo-img" />
+      </a>
+      <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+      <div class="nav-center" id="nav-menu">
+        <a href="homepage.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Login</a>
       </div>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-cta">
+        <a href="#" class="btn primary-btn">Start Free Trial</a>
+      </div>
     </nav>
   </header>
 
-  <!-- About Section -->
-  <section class="section about-intro">
-    <h1>About Us</h1>
-    <p>The Managed Desk is an Australian-built, engineer-led ITSM and ITAM platform designed specifically for local MSPs.</p>
-    <p>Our founder, Ashwin Raphaël Singh, built TMD after years working in support roles and seeing firsthand how bloated platforms made simple IT work harder than it needed to be.</p>
-    <p>Today, TMD helps teams manage tickets, track assets, and deliver service — fast, affordable, and fully hosted on AWS Sydney.</p>
+  <!-- ✅ About Section -->
+  <section class="section" id="about-section">
+    <h2>About TMD</h2>
+    <p style="max-width: 800px; margin: 0 auto; font-size: 18px;">
+      TMD is Australia's most trusted ITSM and Asset Management platform. We help schools, governments, and businesses manage their digital assets with ease, security, and compliance. Built entirely in Australia, TMD offers unmatched local support and enterprise-grade reliability.
+    </p>
   </section>
 
-  <!-- Values Section -->
-  <section class="section values">
-    <h2>🌟 Our Values</h2>
-    <ul class="values-list">
-      <li>🇦🇺 Built for MSPs in Australia</li>
-      <li>🔒 Privacy-first. No data offshoring</li>
-      <li>☁️ Hosted on AWS Sydney</li>
-      <li>🤝 Supported by real engineers</li>
-      <li>🔄 No lock-ins. No gotchas. No upsells.</li>
-    </ul>
-  </section>
-
-  <!-- CTA -->
-  <section class="section final-cta">
-    <h2>Tired of bloated ITSM platforms?</h2>
-    <div class="cta-buttons">
-      <a href="#" class="btn btn-primary">Start Free Trial</a>
-      <a href="#" class="btn btn-secondary">Book a Demo</a>
-    </div>
+  <!-- Client Portal (Optional) -->
+  <section id="client-portal">
+    <p>Already a customer? <a href="#">Login to Client Portal</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="footer-nav">
-      <a href="homepage.html">Home</a>
-      <a href="features.html">Features</a>
-      <a href="about.html" class="active">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
     <p>Proudly Built & Hosted in Australia 🇦🇺</p>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms & Privacy</a></li>
+    </ul>
   </footer>
 
+  <!-- Mobile Menu Toggle Script -->
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const nav = document.querySelector(".navbar");
-      const toggle = document.querySelector(".nav-toggle");
-      toggle.addEventListener("click", () => nav.classList.toggle("open"));
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById("nav-toggle");
+      const menu = document.getElementById("nav-menu");
+      toggle.addEventListener("click", function () {
+        menu.classList.toggle("show");
+      });
     });
   </script>
+
 </body>
 </html>
